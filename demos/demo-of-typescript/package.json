@@ -1,0 +1,27 @@
+{
+  "name": "typescript-demo-of-wlc-vue2-ui-component",
+  "description": "演示 @wulechuan/vue2-ui-component 用法的 TypeScript 项目。",
+  "license": "WTFPL",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "vue-cli-service  serve  --port 3568"
+  },
+  "dependencies": {
+    "@wulechuan/vue2-ui--page": "file:../..",
+    "vue": "^2.6.11",
+    "vue-property-decorator": "^8.3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-typescript": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "typescript": "^3.8.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

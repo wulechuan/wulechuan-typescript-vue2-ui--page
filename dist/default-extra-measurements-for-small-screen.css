@@ -1,0 +1,36 @@
+.page {
+  --page-header-height: 5rem;
+  --page-footer-height: 3rem;
+  --page-contents-horizontal-padding: 2rem;
+}
+.page-header,
+.page-footer,
+.page-body-content {
+  padding-left: var(--page-contents-horizontal-padding, 1rem);
+  padding-right: var(--page-contents-horizontal-padding, 1rem);
+}
+.page-body-content {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.page-container {
+  padding: 1rem;
+}
+@media screen and (max-width: 515px) {
+  .page-container {
+    padding: 0;
+  }
+}
+.page {
+  max-width: 51rem;
+  box-shadow: 0 0 0.5em 0.15em rgba(0,0,0,0.15);
+}
+@media screen and (max-width: 515px) {
+  .page {
+    --page-contents-horizontal-padding: 1rem;
+    box-shadow: none;
+  }
+}
+.os-is-ios .page-footer {
+  padding-bottom: 0.8rem;
+}

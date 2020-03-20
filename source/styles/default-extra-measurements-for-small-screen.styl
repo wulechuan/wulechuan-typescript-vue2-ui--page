@@ -1,0 +1,40 @@
+@require './__shared-variables'
+@require './default-extra-measurements'
+
+
+
+.page-container {
+    padding 1rem
+
+    @media screen and (max-width screen-widthstop-min) {
+        padding 0
+    }
+}
+
+
+
+.page {
+    max-width 51rem // 默认值而已
+    box-shadow 0 0 0.5em 0.15em rgba(black, 0.15)
+
+    @media screen and (max-width: screen-widthstop-min) {
+
+        // 所谓 page-contents 包括
+        //     .page-header、
+        //     .page-footer 和
+        //     .page-body-content
+        // 三者。
+        --page-contents-horizontal-padding 1rem
+
+        box-shadow none
+    }
+}
+
+
+
+.os-is-ios {
+
+    .page-footer {
+        padding-bottom 0.8rem // 为了躲避 iPhone 底部的手势提示横条。
+    }
+}

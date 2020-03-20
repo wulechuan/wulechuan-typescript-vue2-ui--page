@@ -1,0 +1,15 @@
+.page {
+  --page-header-height: 5rem;
+  --page-footer-height: 3rem;
+  --page-contents-horizontal-padding: 2rem;
+}
+.page-header,
+.page-footer,
+.page-body-content {
+  padding-left: var(--page-contents-horizontal-padding, 1rem);
+  padding-right: var(--page-contents-horizontal-padding, 1rem);
+}
+.page-body-content {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}

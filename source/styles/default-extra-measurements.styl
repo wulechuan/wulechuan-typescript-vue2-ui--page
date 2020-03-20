@@ -1,0 +1,27 @@
+.page {
+    --page-header-height 5rem // 默认值而已
+    --page-footer-height 3rem // 默认值而已
+
+    // 所谓 page-contents 包括
+    //     .page-header、
+    //     .page-footer 和
+    //     .page-body-content
+    // 三者。
+    --page-contents-horizontal-padding 2rem
+}
+
+
+
+.page-header,
+.page-footer,
+.page-body-content {
+    padding-left  var(--page-contents-horizontal-padding, 1rem)
+    padding-right var(--page-contents-horizontal-padding, 1rem)
+}
+
+
+
+.page-body-content {
+    padding-top    1rem
+    padding-bottom 5rem
+}

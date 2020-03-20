@@ -1,0 +1,60 @@
+@require './__shared-variables'
+
+
+
+
+
+.page {
+    --page-header-backdrop-filter blur(1rem)
+    --page-footer-backdrop-filter blur(1rem)
+
+    --page-header-bg-color-with-backdrop-filter    rgba(black, 0)
+    --page-header-bg-color-without-backdrop-filter rgba(black, 0)
+
+    --page-footer-bg-color-with-backdrop-filter    rgba(black, 0)
+    --page-footer-bg-color-without-backdrop-filter rgba(black, 0)
+
+    @supports (-webkit-backdrop-filter: blur(0.5rem)) {
+        &.page-header-should-cover-page-body {
+
+            .page-header {
+                background-color        var(--page-header-bg-color-with-backdrop-filter)
+                -webkit-backdrop-filter var(--page-header-backdrop-filter)
+            }
+        }
+
+        &.page-footer-should-cover-page-body {
+
+            .page-footer {
+                background-color        var(--page-footer-bg-color-with-backdrop-filter)
+                -webkit-backdrop-filter var(--page-footer-backdrop-filter)
+            }
+        }
+    }
+
+    @supports (backdrop-filter: blur(0.5rem)) {
+        &.page-header-should-cover-page-body {
+
+            .page-header {
+                background-color var(--page-header-bg-color-with-backdrop-filter)
+                backdrop-filter  var(--page-header-backdrop-filter)
+            }
+        }
+
+        &.page-footer-should-cover-page-body {
+
+            .page-footer {
+                background-color var(--page-footer-bg-color-with-backdrop-filter)
+                backdrop-filter  var(--page-footer-backdrop-filter)
+            }
+        }
+    }
+}
+
+.page-header {
+    background-color var(--page-header-bg-color-without-backdrop-filter)
+}
+
+.page-footer {
+    background-color var(--page-footer-bg-color-without-backdrop-filter)
+}

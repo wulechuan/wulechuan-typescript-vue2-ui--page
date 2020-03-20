@@ -1,0 +1,73 @@
+{
+    "name": "@wulechuan/vue2-ui--page",
+    "author": "wulechuan <wulechuan@live.com>",
+    "version": "0.1.0",
+    "description": "针对在 Vue 2.x 框架的用户界面组件：视觉页（Page）。并支持 TypeScript 语法。",
+    "license": "WTFPL",
+    "keywords": [
+        "page",
+        "visual-page",
+        "vue",
+        "vue2",
+        "vuejs",
+        "ui",
+        "user-interface",
+        "ux",
+        "user-experience",
+        "responsive",
+        "responsive-layout",
+        "mobile",
+        "small-screen",
+        "small-window",
+        "narrow-screen",
+        "narrow-window"
+    ],
+    "main": "source/index.vue",
+    "scripts": {
+        "remove-all-html-docs": "rimraf  ./ReadMe*.html  ./documents/**/*.html",
+        "generate-html-docs": "npm  run  remove-all-html-docs    &&    wlc-md-to-html  -i ./*.md,./documents/**/*.md  -E3  -C ./documents/wlc-md-to-html.config.js  --to '*'",
+        "_lint-dist": "eslint    --fix    ./dist/**/*.vue    ./dist/**/*.js",
+        "_lint-source": "eslint  --fix  ./source/**/*.vue  ./source/**/*.ts  ./gulpfile.esm.js/**/*  ./tsconfig.js",
+        "lint": "npm  run  _lint-source         &    npm  run  _lint-dist",
+        "build": "gulp  --silent  buildOnce    &&    npm  run  _lint-dist",
+        "start": "gulp  --silent",
+        "dist": "npm  i    &&    npm  run  _lint-source    &&    npm  run  build",
+        "before-git-commit": "npm  run  dist",
+        "prepublishOnly": "npm     run  dist"
+    },
+    "homepage": "https://github.com/wulechuan/wulechuan-typescript-vue2-ui--page#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wulechuan/wulechuan-typescript-vue2-ui--page.git"
+    },
+    "bugs": {
+        "url": "https://github.com/wulechuan/wulechuan-typescript-vue2-ui--page/issues"
+    },
+    "peerDependencies": {
+        "vue": "^2.6.11"
+    },
+    "dependencies": {
+        "vue-property-decorator": "^8.4.1"
+    },
+    "devDependencies": {
+        "@types/vue": "^2.0.0",
+        "@typescript-eslint/eslint-plugin": "^2.24.0",
+        "@typescript-eslint/parser": "^2.24.0",
+        "@vue/eslint-config-typescript": "^5.0.2",
+        "@wulechuan/css-stylus-markdown-themes": "^6.4.9",
+        "@wulechuan/gulp-classical-task-cycle": "^0.3.0",
+        "@wulechuan/vue2-sfc-from-typescript-to-javascript": "^0.1.4",
+        "cssnano": "^4.1.10",
+        "eslint": "^6.8.0",
+        "eslint-plugin-vue": "^6.2.2",
+        "esm": "^3.2.25",
+        "fs-extra": "^8.1.0",
+        "gulp-postcss": "^8.0.0",
+        "gulp-stylus": "^2.7.0",
+        "gulp-uglify-es": "^2.0.0",
+        "indent.js": "^0.3.5",
+        "rimraf": "^3.0.2",
+        "through2": "^3.0.1",
+        "typescript": "^3.8.3"
+    }
+}

@@ -1,0 +1,12 @@
+.DS_Store
+.circleci
+.vs
+.vscode
+/demos
+/documents/styles
+/documents/**/*.html
+node_modules
+/ReadMe.*.html
+/ReadMe.html
+/temp/**/*
+git*.sh
