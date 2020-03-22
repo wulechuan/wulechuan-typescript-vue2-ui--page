@@ -3,8 +3,8 @@
   --page-footer-backdrop-filter: blur(1rem);
   --page-header-bg-color-with-backdrop-filter: rgba(0,0,0,0);
   --page-header-bg-color-without-backdrop-filter: rgba(0,0,0,0);
-  --page-footer-bg-color-with-backdrop-filter: rgba(0,0,0,0);
-  --page-footer-bg-color-without-backdrop-filter: rgba(0,0,0,0);
+  --page-footer-bg-color-with-backdrop-filter: rgba(255,255,255,0.79);
+  --page-footer-bg-color-without-backdrop-filter: rgba(255,255,255,0.79);
 }
 @supports (-webkit-backdrop-filter: blur(0.5rem)) {
   .page.page-header-should-cover-page-body .page-header {
