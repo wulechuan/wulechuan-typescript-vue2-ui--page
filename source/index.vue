@@ -104,8 +104,8 @@ export default class Page extends Vue {
 
     private get $pageCSSClassNames(): TCSSClassNamesConfig {
         return {
-            'has-page-header':                    this.hasHeader,
-            'has-page-footer':                    this.hasFooter,
+            'has-page-header':                  !!this.hasHeader,
+            'has-page-footer':                  !!this.hasFooter,
             'page-header-is-fixed-above':         this.$headerFixedAbove,
             'page-footer-is-fixed-below':         this.$footerFixedBelow,
             'page-header-should-cover-page-body': this.$headerCoversBody,

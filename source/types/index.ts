@@ -1,3 +1,3 @@
-export type TCSSClassNamesConfig = string | Array<string> | {
+export type TCSSClassNamesConfig = null | string | Array<string> | {
     [cssClassName: string]: boolean | undefined;
 };
