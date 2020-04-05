@@ -5,7 +5,7 @@ declare module '@wulechuan/vue2-ui--page' {
         [cssClassName: string]: boolean | undefined;
     };
 
-    export class Page extends Vue {
+    export default class Page extends Vue {
         public hasHeader?:                                 boolean;
         public hasFooter?:                                 boolean;
         public headerIsFixedAbove?:                        boolean;
