@@ -8,6 +8,8 @@ node_modules
 /gulp*
 /source/styles
 /temp/**/*
+.markdown*
+.eslint*
 ReadMe*.html
 git*.sh
 tsconfig*
