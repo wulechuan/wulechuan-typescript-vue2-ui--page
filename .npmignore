@@ -2,11 +2,12 @@
 .circleci
 .vs
 .vscode
-/demos
-/documents/styles
-/documents/**/*.html
 node_modules
-/ReadMe.*.html
-/ReadMe.html
+/demos
+/documents
+/gulp*
+/source/styles
 /temp/**/*
+ReadMe*.html
 git*.sh
+tsconfig*
