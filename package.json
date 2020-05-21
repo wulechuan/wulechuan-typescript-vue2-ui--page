@@ -1,7 +1,7 @@
 {
     "name": "@wulechuan/vue2-ui--page",
     "author": "wulechuan <wulechuan@live.com>",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "针对在 Vue 2.x 框架的用户界面组件：视觉页（Page）。并支持 TypeScript 语法。",
     "license": "WTFPL",
     "keywords": [
